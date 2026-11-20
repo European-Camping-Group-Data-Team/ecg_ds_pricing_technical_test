@@ -4,9 +4,10 @@
 
 You have just joined the Data Science team of a group operating campsites across Europe (France, Spain, Italy, Croatia, the Netherlands). The Revenue Management team sets nightly prices for each accommodation type and wants to move towards data-driven dynamic pricing. This test reproduces, on a small synthetic dataset, a few tasks you would face in your first weeks.
 
-- **Duration: 75 minutes**, from the moment you receive this brief. Parts are timed as a guide. Not finishing everything is normal: we prefer fewer questions done well, with your reasoning visible, over everything done quickly. Keep time for Part E.
-- **Deliverables:** one `answers.sql` file (Part A), one notebook or `.py` script (Parts B, C and D) with your written answers (as markdown in the notebook, or in a short `ANSWERS.md`), and a 3-slide PDF (Part E). Send everything back as a single zip.
-- **Tools:** any SQL engine. We recommend [DuckDB](https://duckdb.org), which queries the CSV files directly (`SELECT * FROM 'bookings.csv'`). BigQuery syntax is welcome too. For Python, use pandas, numpy, statsmodels, scikit-learn or equivalents.
+- **Duration: 75 minutes**, from the moment you receive access to this repository. Parts are timed as a guide. Not finishing everything is normal: we prefer fewer questions done well, with your reasoning visible, over everything done quickly. Keep time for Part E.
+- **Deliverables:** one `answers.sql` file (Part A), one notebook or `.py` script (Parts B, C and D) with your written answers (as markdown in the notebook, or in a short `ANSWERS.md`), and a 3-slide PDF (Part E), pushed to a branch of this repository (see *Submitting your work* at the end).
+- **Environment:** a `requirements.txt` is provided. Create a fresh environment with Python 3.10 to 3.13 and run `pip install -r requirements.txt` (uv or conda are fine too). If you add a package, add it to `requirements.txt` with its exact version (`package==x.y.z`). We will run your code from a fresh environment built from your `requirements.txt`, so make sure it runs that way.
+- **Tools:** any SQL engine. We recommend [DuckDB](https://duckdb.org), which queries the CSV files directly (`SELECT * FROM 'data/bookings.csv'`). BigQuery syntax is welcome too. For Python, use pandas, numpy, statsmodels, scikit-learn or equivalents.
 - **AI tools:** allowed **only as coding assistants** (syntax, debugging, library usage, autocompletion). The analysis, the interpretation of results, the choice of approach, every written answer and the slides must be your own: do not use AI tools to analyse the data, interpret outputs, brainstorm approaches or generate slides. We rely on your honesty here, and we will review your submission with you in the next interview.
 - **Assumptions:** when something is ambiguous, make a reasonable assumption and write it down in one line. This is part of what we assess.
 - **Language:** answers in English.
@@ -74,14 +75,25 @@ Prepare **3 slides** (any tool, exported as PDF) summarising your main findings 
 
 Each slide title should state the conclusion, not the topic. One chart per slide at most. No code, no jargon.
 
+## Submitting your work
+
+1. Create a branch named `candidate/firstname-lastname` (lowercase, no accents, e.g. `candidate/marie-dupont`) from `main`.
+2. Put your work in a `submission/` folder at the root of the repository, and commit:
+   - `answers.sql`
+   - your notebook or `.py` script for Parts B, C and D
+   - `ANSWERS.md` (if your written answers are not in the notebook)
+   - `slides.pdf`
+3. Commit your updated `requirements.txt` if you added packages.
+4. Push your branch **within 75 minutes** of receiving access to the repository. The time of your last push counts.
+
+Do not push to `main`, and do not modify the files in `data/`. Committing as you go is welcome: we do not judge the commit history, but it helps us follow your reasoning.
+
 ## Submission checklist
 
-- [ ] `answers.sql` with A1 and one-line assumptions
-- [ ] Notebook or `.py` script for Parts B, C and D, runnable from the CSV files
+- [ ] `submission/answers.sql` with A1 and one-line assumptions
+- [ ] Notebook or `.py` script in `submission/`, runnable from a fresh environment built from `requirements.txt`
 - [ ] Written answers: data quality summary (B1), forecast comparison (C1), interpretation of D1 and D2
-- [ ] 3-slide PDF for the Revenue Management director (Part E)
-- [ ] A note on what you did not have time to finish and how you would have done it
-- [ ] A line describing how you used AI coding assistants, if at all
-- [ ] Time actually spent
-
-Please send everything back as a single zip within 75 minutes of receiving this brief.
+- [ ] `submission/slides.pdf`: 3 slides for the Revenue Management director (Part E)
+- [ ] `requirements.txt` updated if you added packages
+- [ ] In `ANSWERS.md` or the notebook: your Python version, what you did not have time to finish and how you would have done it, how you used AI coding assistants (if at all), and the time actually spent
+- [ ] Branch `candidate/firstname-lastname` pushed within 75 minutes
