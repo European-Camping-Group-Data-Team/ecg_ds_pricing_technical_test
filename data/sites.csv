@@ -1,0 +1,13 @@
+site_id,site_name,country,region,region_type,stars
+S01,Camping Les Dunes d'Or,FR,Vendée,coastal,4
+S02,Camping La Pinède Azur,FR,Côte d'Azur,coastal,5
+S03,Camping Le Moulin Vert,FR,Dordogne,countryside,4
+S04,Camping Les Mélèzes,FR,Alpes,mountain,3
+S05,Càmping Cala Brava,ES,Costa Brava,coastal,4
+S06,Càmping Platja Daurada,ES,Costa Daurada,coastal,3
+S07,Camping Laguna Blu,IT,Veneto,coastal,5
+S08,Camping Il Cipresso,IT,Toscana,countryside,4
+S09,Kamp Borova Uvala,HR,Istria,coastal,4
+S10,Kamp Plava Laguna,HR,Dalmatia,coastal,3
+S11,Camping De Heidebloem,NL,Veluwe,countryside,3
+S12,Camping Duinzicht,NL,Zeeland,coastal,4
