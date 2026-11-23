@@ -7,8 +7,8 @@ Any resemblance to real campsites is coincidental. Column descriptions are in th
 |---|---|---|
 | sites.csv | one row per campsite | 12 |
 | inventory.csv | one row per campsite × accommodation type | 48 |
-| bookings.csv | one row per booking (raw extract, not cleaned) | 85,000 |
-| daily_prices.csv | one row per campsite × accommodation type × night | 20,500 |
-| price_tests.csv | one row per campsite × accommodation type × week in the 2025 price tests | 206 |
+| bookings.csv | one row per booking (raw extract, not cleaned) | 67,000 |
+| daily_demand.csv | one row per campsite × accommodation type × night open | 20,500 |
+| price_tests.csv | one row per campsite × accommodation type × week in the 2025 price tests | 260 |
 
 Tip: DuckDB can query these files directly, e.g. `SELECT * FROM 'bookings.csv' LIMIT 10;`
