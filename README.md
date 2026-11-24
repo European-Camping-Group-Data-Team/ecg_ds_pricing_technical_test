@@ -76,4 +76,4 @@ Show your code and write your interpretation in plain words. Rigour in the reaso
 - [ ] `answers.sql` with B1 and one-line assumptions
 - [ ] `requirements.txt` updated if you added packages
 - [ ] In `ANSWERS.md` or the notebook, a few lines: your Python version, what you did not have time to finish and how you would have done it, how you used AI coding assistants (if at all), and the time actually spent
-- [ ] `firstname-lastname.zip` uploaded to the shared drive within 75 minutes
+- [ ] `firstname-lastname.zip` uploaded to the shared drive when you're finished.
