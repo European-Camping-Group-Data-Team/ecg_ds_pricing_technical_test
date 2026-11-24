@@ -33,25 +33,29 @@ Definitions used in the questions:
 - **On the books at date D:** bookings made on or before D and not cancelled at D (a booking cancelled after D was still on the books at D).
 - **Price tests:** in 2025, for some shoulder-season weeks (May, June, September), the published price of a campsite × accommodation type was multiplied for the whole week by a factor drawn at random among 0.85, 1.00 and 1.15. `price_eur` in `daily_demand.csv` already includes this multiplier.
 
-## Part A – Data quality (10 min)
+**Note** : Time is only indicative and should give you an idea of the importance or the relative size of the exercise against the whole test. 
+
+## Part A – Data quality (~20 min)
 
 We will read your code as we would in a code review: structure, readability and reusability count as much as the result.
 
 **A1 – Data quality.** Load `bookings.csv` and check its quality. List the issues you find, how many rows each affects, and how you treat them (fix, exclude or flag), in a short table or a few bullets. Reuse this cleaning in Parts B and C.
 
-## Part B – SQL (15 min)
+## Part B – SQL (~25 min)
 
 Write the query in `answers.sql`, with one-line comments stating any assumption. It should run as written on the CSV files.
 
 **B1 – Booking pace.** Revenue managers compare the bookings on the books with last year at the same date. For each campsite, compute the room-nights falling in July 2025 that were on the books as of 1 May 2025, the same figure for July 2024 as of 1 May 2024, and the percentage difference. Note that a booking covers several nights, and that a stay can start in June and end in July.
 
-## Part C – Forecasting (15 min)
+TIPS : If you can't manage to write a satisfying SQL query, you can right a data processing in pandas that lead you to the same answer. 
+
+## Part C – Forecasting (~30 min)
 
 Revenue managers forecast with the **pick-up** method: final demand = what is already on the books today + what will still be booked between today and the stay (the pick-up), estimated from last year.
 
 **C1 – September forecast.** Put yourself on **1 July 2025**. For each campsite × accommodation type, forecast the room-nights that will be sold in **September 2025** with the pick-up method, and with a naive "same as last year" forecast. Only use information available on 1 July 2025. Compare both forecasts with what actually happened, using an error metric you justify. How did you estimate the pick-up from last year, and why? Which forecast would you give Revenue Management, how far can they trust it, and in which situations would it break down?
 
-## Part D – Pricing (20 min)
+## Part D – Pricing (~30 min)
 
 Show your code and write your interpretation in plain words. Rigour in the reasoning matters more than sophistication of the method.
 
