@@ -47,7 +47,7 @@ Write the query in `answers.sql`, with one-line comments stating any assumption.
 
 **B1 – Booking pace.** Revenue managers compare the bookings on the books with last year at the same date. For each campsite, compute the room-nights falling in July 2025 that were on the books as of 1 May 2025, the same figure for July 2024 as of 1 May 2024, and the percentage difference. Note that a booking covers several nights, and that a stay can start in June and end in July.
 
-TIPS : If you can't manage to write a satisfying SQL query, you can right a data processing in pandas that lead you to the same answer. 
+TIPS : If you can't manage to write a satisfying SQL query, you can write a data processing in pandas that leads to the same answer. 
 
 ## Part C – Forecasting (~30 min)
 
